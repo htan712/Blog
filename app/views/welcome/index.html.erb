@@ -1,0 +1,25 @@
+<div class="wrapper clearfix">
+    <div class="col-1 about homepage-content">
+        <h2>About</h2>
+        <hr>
+        <p>I'm a self-taught Jr. Developer who switched career from Fitness industry.</p>
+        <p>Used to be a health freak and now pursuing a career in software engineering.  I love to code with rails and can play with JS proficiently.  </p>
+        <p>You can find me sharing funny sarcastic posts and cuteness level overloaded furball pets on <a href="https://www.facebook.com/hock.tan.58">Facebook</a>.  I love music.  I listen to a wide range from Metallica, Aerosmith, Linkin Park to mainstream EDM and Trap music.  </p>
+    </div>
+
+    <div class="col-2 homepage-content">
+        <h2>What i've built</h2>
+        <hr>
+        <% @posts.each do |post| %>
+        <h3><a href="#"><%= link_to post.title, post %></a></h3>
+        <p class="date"><%= post.content %></p>
+        <% end %>
+        <h3><a href="uniqreps.herokuapp.com">UniqReps</a></h3>
+        <p class="date">A recipebox clone</p>
+    </div>
+
+    <div class="col-3 homepage-content">
+        <h2>Contact Me</h2>
+        <hr>
+    </div>
+</div>

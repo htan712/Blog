@@ -12,6 +12,10 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
+gem 'bootstrap-sass'
+gem 'normalize-rails', '~> 3.0', '>= 3.0.1'
+
 
 
 group :development, :test do

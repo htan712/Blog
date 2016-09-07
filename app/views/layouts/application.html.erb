@@ -2,20 +2,33 @@
 <html>
 <head>
   <title>Hock Tan - Jr. Developer</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
     <header id="main-navigation" class="clearfix">
-        <a href="#" class="name">Hock Tan</a>
+        <%= link_to "Hock Tan", root_path, class: "name" %>
         <nav>
-            <a href="#">Projects</a>
+            <a href="#">Articles</a>
+            <%= link_to "Portfolio", posts_path %>
             <a href="#">Contact</a>
         </nav>
     </header>
-
-<%= yield %>
-
+    
+    
+    <%= yield %>
+    <footer id="main-footer">
+        <a href="https://mackenziechild.me/"><p class="copyright">Credits to: MackenzieChild</p></a>
+        <nav>
+            <a href="https://www.facebook.com/hock.tan.58"><i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="http://github.com/htan712"><i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </nav>
+    </footer>
 </body>
 </html>
