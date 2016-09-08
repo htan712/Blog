@@ -11,11 +11,9 @@
         <h2>What i've built</h2>
         <hr>
         <% @posts.each do |post| %>
-        <h3><a href="#"><%= link_to post.title, post %></a></h3>
-        <p class="date"><%= post.content %></p>
+        <h3><%= link_to post.title, post %></h3>
+        <p class="date"><%= post.created_at.strftime("%A-%b-%d") %></p>
         <% end %>
-        <h3><a href="uniqreps.herokuapp.com">UniqReps</a></h3>
-        <p class="date">A recipebox clone</p>
     </div>
 
     <div class="col-3 homepage-content">

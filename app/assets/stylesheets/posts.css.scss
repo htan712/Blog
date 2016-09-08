@@ -38,11 +38,62 @@
     }
 }
 
+//------Post Show
+#post-show-content {
+    header {
+        text-align: center;
+        .date {
+            font-size: .9em;
+            color: $light;
+            margin: 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+    }
+    hr {
+        margin: 3em auto;
+    }
+}
+
+#share-box {
+    text-align: center;
+    margin: 0;
+    p {
+        padding: 0 0 1em 0;
+        margin: 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $dark;
+        font-size: .75em;  
+    }
+    i {
+        color: $dark;
+        padding: .5em 1.5em;
+        &:hover {
+            color: $highlight;
+            cursor: pointer;
+        }
+    }
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper-padding {
+    padding: 4rem 0;
+}
+
 .skinny-wrapper {
     width: 80%;
     max-width: 760px;
     margin: 0 auto;
 }
+
+//------ pagination
 
 .pagination:before,
 .pagination:after {
