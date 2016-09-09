@@ -1,21 +1,12 @@
-<h1 id="page-title">Portfolio</h1>
+<h1 id="page-title">Articles</h1>
+
 <div id="post-wrapper" class="skinny-wrapper">
+    <% @posts.each do |post| %>
     <div class="post">
-        <h2><a href="#">Post title</a></h2>
-        <p class="date">content here</p>
-        <hr>
+        <h2><%= link_to post.title, post %></h2>
+        <p class="date"><%= post.created_at.strftime("%A-%b-%d") %></p>
     </div>
-    <div class="post">
-        <h2><a href="#">Post title</a></h2>
-        <p class="date">content here</p>
-        <hr>
-    </div>
-    <div class="post">
-        <h2><a href="#">Post title</a></h2>
-        <p class="date">content here</p>
-        <hr>
-    </div>
-    
+    <% end %>
 </div>
 
 <div class="pagination">
