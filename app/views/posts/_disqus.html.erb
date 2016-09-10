@@ -4,12 +4,18 @@
     /**
  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
-    
-    (function () {
-        this.page.url = '<%= url_for([@post, {only_path: false}]) %>';
+//    
+    var disqus_config = function () {
+        s.src = '//hocktan.disqus.com/embed.js';
+        this.page.url = '<%= url_for(@post) %>';
         this.page.identifier = '<%= @post.id %>';
         this.page.title = '<%= @post.title %>';
-    })();
+    };
+//    (function () {
+////        this.page.url = '<%= url_for([@post, {only_path: false}]) %>';
+//        this.page.identifier = '<%= @post.id %>';
+//        this.page.title = '<%= @post.title %>';
+//    })();
 
     (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
