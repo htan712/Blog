@@ -4,4 +4,5 @@ Rails.application.routes.draw do
     get 'welcome/index'
     get 'contact/index'
     resources :posts
+    resources :projects
 end
