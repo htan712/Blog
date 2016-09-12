@@ -37,21 +37,6 @@ $border: #e9e9e9;
 .clearfix:after {
     clear: both;
 }
-//
-//header {
-//    background: ##ffffff;
-//    background-image: url("zenbg-1.png"), url("zenbg-2.png");
-//    background-repeat: repeat-y, repeat;
-//
-//
-//}
-//
-//footer {
-//    background: ##ffffff;
-//    background-image: url("zenbg-1.png"), url("zenbg-2.png");
-//    background-repeat: repeat-y, repeat;
-//}
-
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -111,13 +96,13 @@ hr {
 
 #main-navigation {
     padding: 2.5em 5%;
-    border-bottom: 2px solid $border;
+    border-bottom: 2px solid $highlight;
     .name {
         font-weight: 700;
         font-size: .75em;
         letter-spacing: 4px;
         text-transform: uppercase;
-        border: 3px dashed $border;
+        border: 3px dashed #acacac;
         padding: 1rem;
         text-decoration: none;
         color: $dark;
@@ -145,7 +130,7 @@ hr {
 
 #main-footer {
     padding: 2.5em 5%;
-    border-top: 2px solid $border;
+    border-top: 2px solid $highlight;
     .copyright {
         float: left;
         font-size: .9em;
