@@ -200,3 +200,25 @@ input[type="submit"], .button {
     text-align: center;
     padding: 1em;
 }
+
+#admin-links {
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
+    text-align: center;
+    padding: 1em 0;
+    margin: 3em 0;
+    a {
+        color: $light;
+        text-decoration: none;
+        margin: 0 1em;
+        font-weight: 700;
+        font-size: .8em;
+        text-transform: uppercase;
+    }
+}
+
+.notice, .alert{
+    text-align: center;
+    border-bottom: 1px solid $border;
+    padding: 1em 0;
+}
