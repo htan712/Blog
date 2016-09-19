@@ -31,6 +31,7 @@ group :development do
     gem 'web-console', '~> 2.0'
     gem 'spring'
     gem 'sqlite3'
+    gem 'better_errors', '~> 2.1', '>= 2.1.1'
 end
 
 group :production do

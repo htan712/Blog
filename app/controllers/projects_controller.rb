@@ -1,5 +1,7 @@
 class ProjectsController < ApplicationController
 	before_action :find_project, only: [:show, :edit, :update, :destroy]
+	before_action :authenticate_user!, except: [:index, :show]
+
 
 	def index
 		@projects = Project.all.order("created_at desc")
@@ -18,7 +20,7 @@ class ProjectsController < ApplicationController
 		if @project.save
 			redirect_to @project, notice: "project posted"
 		else
-			render 'new'
+			render 'new', notice: "unable to create post."
 		end
 	end
 
@@ -29,7 +31,7 @@ class ProjectsController < ApplicationController
 		if @project.update project_params
 			redirect_to @project, notice: "Updated"
 		else
-			render 'edit'
+			render 'edit', notice: "please try again."
 		end
 	end
 
